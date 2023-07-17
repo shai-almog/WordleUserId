@@ -73,30 +73,3 @@ public class WebController {
     }
 
 }
-
-//    @GetMapping("/guessMVC")
-//    public String guess(HttpServletResponse response,
-//                        @CookieValue(required = false) String userId,
-//                        Model model) {
-//        userId = initUserId(response, userId);
-//        showAttempts(userId, model);
-//        return "WordleGuess";
-//    }
-//
-//
-//    @PostMapping("/guessMVC")
-//    public String submitGuess(HttpServletResponse response,
-//                              @CookieValue(required = false) String userId,
-//                              String guess, Model model) {
-//        userId = initUserId(response, userId);
-//        String error = wordleService.validate(guess);
-//        if(error != null) {
-//            model.addAttribute("errorMessage", error);
-//        } else {
-//            model.addAttribute("errorMessage", "");
-//            attempts.add(guess);
-//        }
-//        showAttempts(userId, model);
-//
-//        return "WordleGuess";
-//    }
